@@ -19,4 +19,7 @@ if [ "$upstream" != "$local" ]; then
   # Update the hash generic.sha256
   generic=$(nix-prefetch-url --type sha256 --unpack $baseUrl/zen.linux-generic.tar.bz2)
   sed -i "s/generic.sha256 = \".*\"/generic.sha256 = \"$generic\"/" ./flake.nix
+
+  nix flake update
+  nix build
 fi

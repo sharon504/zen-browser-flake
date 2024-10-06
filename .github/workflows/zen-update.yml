@@ -24,8 +24,6 @@ jobs:
       - name: Update hashes and test build
         run: |
           ./update-zen-browser.sh
-          nix flake update
-          nix build
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
