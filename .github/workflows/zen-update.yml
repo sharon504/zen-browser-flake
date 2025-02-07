@@ -20,7 +20,7 @@ jobs:
 
       - name: Install Nix
         if: steps.new-version.outputs.new_version == 'true'
-        uses: cachix/install-nix-action@v27
+        uses: DeterminateSystems/flakehub-cache-action@main
         with:
           nix_path: nixpkgs=channel:nixpkgs-unstable
 
