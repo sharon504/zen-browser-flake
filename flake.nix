@@ -11,10 +11,10 @@
       version = "1.11.3b";
       downloadUrl = {
         specific.url = "https://github.com/zen-browser/desktop/releases/download/${version}/zen.linux-x86_64.tar.xz";
-        specific.sha256 = "4f3545963c78b8c86f9e7e338748bc213bb6d4d1f193dcacefcef3524c3302c7";
+        specific.sha256 = "06d6nd0yzz1r73w2qxyawcbbfnc5wyar28vxqpi8qn0gngj4jyh4";
 
         generic.url = "https://github.com/zen-browser/desktop/releases/download/${version}/zen.linux-x86_64.tar.xz";
-        generic.sha256 = "4f3545963c78b8c86f9e7e338748bc213bb6d4d1f193dcacefcef3524c3302c7";
+        generic.sha256 = "06d6nd0yzz1r73w2qxyawcbbfnc5wyar28vxqpi8qn0gngj4jyh4";
       };
 
       pkgs = import nixpkgs {
